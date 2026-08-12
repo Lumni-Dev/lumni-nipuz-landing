@@ -1,0 +1,17 @@
+{
+  "name": "lumni-nipuz-landing",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Landing page e API de licença do Nipuz (Stripe + Supabase)",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "next": "^15.1.6",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "stripe": "^17.6.0"
+  }
+}
