@@ -25,7 +25,7 @@ export async function POST(req) {
           price_data: {
             currency: "brl",
             unit_amount: PRICE_CENTS,
-            product_data: { name: "Nipuz — Licença vitalícia" },
+            product_data: { name: "Nipuz · Licença vitalícia" },
           },
         },
       ],

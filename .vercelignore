@@ -1,0 +1,15 @@
+# Enviado pela CLI da Vercel. Diferente do .gitignore: aqui NÃO ignoramos
+# public/download/ — o instalador (Nipuz-Setup.exe) precisa subir no deploy,
+# senão o botão "Baixar para Windows" quebra. Segredos e artefatos de build
+# continuam de fora.
+node_modules
+.next
+out
+build
+.env
+.env.local
+.env*.local
+.env*
+.vercel
+*.log
+.DS_Store
