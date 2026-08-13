@@ -7,3 +7,7 @@
 .vercel
 *.log
 .DS_Store
+
+.vercel
+.env*
+public/download/
