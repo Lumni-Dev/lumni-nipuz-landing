@@ -1,7 +1,8 @@
 // Landing do Nipuz — estrutura inspirada na idle-labs.com, com a identidade
 // visual do app (paleta "ink" da Lumni, marca em Orbitron, desenho "célula").
 
-const DOWNLOAD = "/download/Nipuz-Setup.exe";
+const DOWNLOAD_WINDOWS = "/download/Nipuz-Setup.exe";
+const DOWNLOAD_LINUX = "/download/Nipuz-linux-x64";
 const PRICE = "19,90";
 const TRIAL = "7 dias";
 const VERSION = "v1.2.0";
@@ -123,7 +124,7 @@ const POR_QUE = [
 const PASSOS = [
   {
     title: "Baixe o instalador",
-    text: "Baixe o Nipuz para Windows. São poucos MB e a instalação leva segundos.",
+    text: "Baixe o Nipuz para Windows ou Linux. São poucos MB e a instalação leva segundos.",
   },
   {
     title: "Entre com o Google",
@@ -180,7 +181,7 @@ const FAQ = [
   },
   {
     q: "Em quais sistemas funciona?",
-    a: "Por enquanto, Windows 10 e 11 (64 bits). Versões para outros sistemas podem vir depois.",
+    a: "Atualmente, Windows 10/11 (64 bits) e Linux x64. Outras plataformas podem ser adicionadas no futuro.",
   },
   {
     q: "As contas ficam mesmo separadas?",
@@ -240,7 +241,7 @@ export default function Home() {
             <a href="#faq">FAQ</a>
           </nav>
           <div className="nav-cta">
-            <a className="btn btn-primary" href={DOWNLOAD}>
+            <a className="btn btn-primary" href={DOWNLOAD_WINDOWS}>
               <Icon name="download" /> Baixar grátis
             </a>
           </div>
@@ -260,11 +261,11 @@ export default function Home() {
               e cache totalmente independentes. Sem malabarismo com janelas.
             </p>
             <div className="hero-actions">
-              <a className="btn btn-primary btn-lg" href={DOWNLOAD}>
-                <Icon name="windows" /> Baixar para Windows
+              <a className="btn btn-primary btn-lg" href={DOWNLOAD_WINDOWS}>
+                <Icon name="windows" /> Windows
               </a>
-              <a className="btn btn-ghost btn-lg" href="#como-funciona">
-                Ver como funciona <Icon name="arrow-right" />
+              <a className="btn btn-ghost btn-lg" href={DOWNLOAD_LINUX}>
+                <Icon name="cpu" /> Linux x64
               </a>
             </div>
             <div className="hero-meta">
@@ -272,7 +273,7 @@ export default function Home() {
               <span className="dot" />
               <span>depois, pagamento único de R$ {PRICE}</span>
               <span className="dot" />
-              <span>Windows 10/11 · {VERSION}</span>
+              <span>Windows 10/11 · Linux x64 · {VERSION}</span>
             </div>
 
             <div className="mock-wrap">
@@ -479,12 +480,17 @@ export default function Home() {
                       </li>
                     ))}
                   </ul>
-                  <a className="btn btn-primary btn-lg btn-block" href={DOWNLOAD}>
-                    <Icon name="windows" /> Baixar e testar grátis
-                  </a>
+                  <div className="hero-actions" style={{ justifyContent: "center", gap: "12px" }}>
+                    <a className="btn btn-primary btn-lg" href={DOWNLOAD_WINDOWS}>
+                      <Icon name="windows" /> Windows
+                    </a>
+                    <a className="btn btn-ghost btn-lg" href={DOWNLOAD_LINUX}>
+                      <Icon name="cpu" /> Linux x64
+                    </a>
+                  </div>
                   <p className="price-note">
-                    Windows 10/11 (64 bits) · {VERSION}. Pagamento processado com
-                    segurança pelo Stripe.
+                    Windows 10/11 (64 bits) · Linux x64 · {VERSION}. Pagamento
+                    processado com segurança pelo Stripe.
                   </p>
                 </div>
               </div>
@@ -524,11 +530,11 @@ export default function Home() {
               minutos. {TRIAL} grátis, depois é seu para sempre.
             </p>
             <div className="hero-actions" style={{ justifyContent: "center" }}>
-              <a className="btn btn-primary btn-lg" href={DOWNLOAD}>
-                <Icon name="download" /> Baixar para Windows
+              <a className="btn btn-primary btn-lg" href={DOWNLOAD_WINDOWS}>
+                <Icon name="download" /> Windows
               </a>
-              <a className="btn btn-ghost btn-lg" href="#preco">
-                Ver preço
+              <a className="btn btn-ghost btn-lg" href={DOWNLOAD_LINUX}>
+                <Icon name="download" /> Linux x64
               </a>
             </div>
           </div>
