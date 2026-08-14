@@ -2,7 +2,6 @@
 // visual do app (paleta "ink" da Lumni, marca em Orbitron, desenho "célula").
 
 const DOWNLOAD_WINDOWS = "/download/Nipuz-Setup-1.2.0.exe";
-const DOWNLOAD_LINUX = "/download/Nipuz-linux-x64";
 const PRICE = "19,90";
 const TRIAL = "7 dias";
 const VERSION = "v1.2.0";
@@ -124,7 +123,7 @@ const POR_QUE = [
 const PASSOS = [
   {
     title: "Baixe o instalador",
-    text: "Baixe o Nipuz para Windows ou Linux. São poucos MB e a instalação leva segundos.",
+    text: "Baixe o Nipuz para Windows. São poucos MB e a instalação leva segundos.",
   },
   {
     title: "Entre com o Google",
@@ -181,7 +180,7 @@ const FAQ = [
   },
   {
     q: "Em quais sistemas funciona?",
-    a: "Atualmente, Windows 10/11 (64 bits) e Linux x64. Outras plataformas podem ser adicionadas no futuro.",
+    a: "Atualmente, Windows 10/11 (64 bits). Outras plataformas podem ser adicionadas no futuro.",
   },
   {
     q: "As contas ficam mesmo separadas?",
@@ -264,16 +263,13 @@ export default function Home() {
               <a className="btn btn-primary btn-lg" href={DOWNLOAD_WINDOWS}>
                 <Icon name="windows" /> Windows
               </a>
-              <a className="btn btn-ghost btn-lg" href={DOWNLOAD_LINUX}>
-                <Icon name="cpu" /> Linux x64
-              </a>
             </div>
             <div className="hero-meta">
               <span>{TRIAL} grátis</span>
               <span className="dot" />
               <span>depois, pagamento único de R$ {PRICE}</span>
               <span className="dot" />
-              <span>Windows 10/11 · Linux x64 · {VERSION}</span>
+              <span>Windows 10/11 · {VERSION}</span>
             </div>
 
             <div className="mock-wrap">
@@ -484,12 +480,9 @@ export default function Home() {
                     <a className="btn btn-primary btn-lg" href={DOWNLOAD_WINDOWS}>
                       <Icon name="windows" /> Windows
                     </a>
-                    <a className="btn btn-ghost btn-lg" href={DOWNLOAD_LINUX}>
-                      <Icon name="cpu" /> Linux x64
-                    </a>
                   </div>
                   <p className="price-note">
-                    Windows 10/11 (64 bits) · Linux x64 · {VERSION}. Pagamento
+                    Windows 10/11 (64 bits) · {VERSION}. Pagamento
                     processado com segurança pelo Stripe.
                   </p>
                 </div>
@@ -532,9 +525,6 @@ export default function Home() {
             <div className="hero-actions" style={{ justifyContent: "center" }}>
               <a className="btn btn-primary btn-lg" href={DOWNLOAD_WINDOWS}>
                 <Icon name="download" /> Windows
-              </a>
-              <a className="btn btn-ghost btn-lg" href={DOWNLOAD_LINUX}>
-                <Icon name="download" /> Linux x64
               </a>
             </div>
           </div>
