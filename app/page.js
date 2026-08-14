@@ -1,7 +1,7 @@
 // Landing do Nipuz — estrutura inspirada na idle-labs.com, com a identidade
 // visual do app (paleta "ink" da Lumni, marca em Orbitron, desenho "célula").
 
-const DOWNLOAD_WINDOWS = "/download/Nipuz-Setup.exe";
+const DOWNLOAD_WINDOWS = "/download/Nipuz-Setup-1.2.0.exe";
 const DOWNLOAD_LINUX = "/download/Nipuz-linux-x64";
 const PRICE = "19,90";
 const TRIAL = "7 dias";
