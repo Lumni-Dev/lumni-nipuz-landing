@@ -10,3 +10,6 @@
 
 .vercel
 .env*
+# READMEs fora do versionamento (mantidos apenas localmente por seguranca)
+README
+README.*
