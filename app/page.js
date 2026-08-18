@@ -573,6 +573,17 @@ export default function Home() {
                       <span dir="ltr">contact@lumni.dev.br</span>
                     </a>
                   </li>
+                  <li>
+                    <a
+                      className="lf-contact"
+                      href="https://wa.me/5516992447672"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <Icon name="whatsapp" />
+                      <span dir="ltr">+55 (16) 99244-7672</span>
+                    </a>
+                  </li>
                 </ul>
               </nav>
             </div>
